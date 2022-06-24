@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width" />
+        <title>Email Form Assessment</title>
+        <link
+             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+             rel="stylesheet"
+             type="text/css"
+        />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <form>
+                <div class="group">
+                    <div class="item">
+                        <label for="name">Full Name:</label>
+                        <input 
+                            id="name"
+                            type="text"
+                            name="name"
+                            required
+                            autofocus="on"
+                            placeholder="Jane Doe"
+                        />
+                    </div>
+                    <div class="item">
+                        <label for="email">Email:</label>
+                        <input 
+                            id="email"
+                            type="email"     
+                            name="email"
+                            required  
+                            placeholder="janedoe@website.com"   
+                        />          
+                    </div>
+                    <div class="item">
+                        <label for="form-message">Your message:</label>
+                        <textarea  
+                            id="form-message"
+                            name="message"
+                            required
+                            maxlength="2000"
+                            placeholder="Please enter your message here"
+                        ></textarea>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+    </body>
+</html>
